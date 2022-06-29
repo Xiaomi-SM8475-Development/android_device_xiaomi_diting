@@ -28,6 +28,7 @@ import android.view.SurfaceControl;
 
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.dolby.DolbyUtils;
+import org.lineageos.settings.doze.PocketService;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 
@@ -53,6 +54,9 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         // Dolby Atmos
         DolbyUtils.getInstance(context).onBootCompleted();
+
+        // Pocket
+        PocketService.startService(context);
 
         // Refresh Rate
         RefreshUtils.initialize(context);
