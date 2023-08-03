@@ -149,7 +149,8 @@ include $(DEVICE_PATH)/configs/properties/default.mk
 PRODUCT_PACKAGES += \
     Ims \
     QtiTelephony \
-    qti-telephony-common
+    qti-telephony-common \
+    XiaomiEuicc
 
 # Perf
 PRODUCT_PACKAGES += \
