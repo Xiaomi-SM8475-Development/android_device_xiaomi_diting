@@ -52,9 +52,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             Log.d(TAG, "Dirac is not present in system");
         }
 
-        // Doze
-        DozeUtils.checkDozeService(context);
-
         // Refresh Rate
         RefreshUtils.initialize(context);
 
