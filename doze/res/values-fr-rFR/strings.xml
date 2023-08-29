@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2016 The CyanogenMod Project
+                   2017 The LineageOS Project
+                   2020 Paranoid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
+    <!-- App Name -->
+    <string name="doze_settings_app_name">Paramètres de Doze</string>
+    <!-- Ambient Display -->
+    <string name="ambient_display_enable">Utiliser l\'affichage ambiant</string>
+    <string name="ambient_display_title">Affichage ambiant</string>
+    <string name="ambient_display_summary">Gestes supplémentaires pour réveiller l’écran</string>
+    <!-- Always on -->
+    <string name="ambient_display_always_on_title">Toujours allumée</string>
+    <string name="ambient_display_always_on_summary">Afficher l’heure, les icônes de notification et autres infos. Utilisation de la batterie accrue.</string>
+    <!-- Pickup sensor -->
+    <string name="pickup_sensor_title">Capteur de mouvements</string>
+    <!-- Proximity sensor -->
+    <string name="proximity_sensor_title">Capteur de proximité</string>
+    <!-- Hand wave gesture -->
+    <string name="hand_wave_gesture_title">Geste de la main</string>
+    <string name="hand_wave_gesture_summary">Impulsion led sur signe de la main si des notifications sont en attente</string>
+    <!-- Pick-up gesture -->
+    <string name="pick_up_gesture_title">Pick-up</string>
+    <string name="pick_up_gesture_summary">Afficher les notifications lors de la prise en main</string>
+    <!-- Pick-up to wake gesture-->
+    <string name="wake_gesture_title">Réveiller</string>
+    <string name="wake_gesture_summary">Réveiller l\'appareil au lieu des notifications clignotantes</string>
+    <!-- Pocket gesture -->
+    <string name="pocket_gesture_title">Poche</string>
+    <string name="pocket_gesture_summary">Le voyant des notifications clignote en sortie de poche</string>
+    <!-- Dialog texts -->
+    <string name="dialog_ok">Ok</string>
+    <!-- Help texts -->
+    <string name="doze_settings_help_title">Aide</string>
+    <string name="doze_settings_help_text">Ces fonctionnalités utilisent des capteurs pour afficher les notifications en mode sommeil. Le capteur choisi est activé uniquement lorsque l\'appareil reçoit une notification, cela aide à réduire l\'utilisation de la batterie. Il y a également une option pour activer le capteur choisi aussitôt que l\'écran s\'éteint, mais cela causera une utilisation plus importante de la batterie.</string>
+</resources>
