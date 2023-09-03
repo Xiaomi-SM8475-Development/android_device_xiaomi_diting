@@ -147,7 +147,8 @@ PRODUCT_COPY_FILES += \
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
-    libmediaplayerservice
+    libmediaplayerservice \
+    libnl
 
 # MultiGen LRU
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -275,3 +276,11 @@ PRODUCT_PACKAGES_DEBUG += \
 # USAP Pool
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    debug.sf.enable_hwc_vds=1 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
