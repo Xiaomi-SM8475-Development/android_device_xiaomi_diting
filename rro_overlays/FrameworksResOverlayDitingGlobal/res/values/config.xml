@@ -20,4 +20,5 @@
          be set by OEMs for devices which use eUICCs. -->
     <integer-array name="non_removable_euicc_slots">
         <item>1</item>
+   </integer-array>
 </resources>
