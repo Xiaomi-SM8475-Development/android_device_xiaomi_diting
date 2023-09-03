@@ -169,6 +169,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
     FrameworksResOverlayDiting \
+    FrameworksResOverlayDitingGlobal \
     SettingsOverlayDiting \
     SettingsResCommon \
     SystemUIOverlayDiting \
