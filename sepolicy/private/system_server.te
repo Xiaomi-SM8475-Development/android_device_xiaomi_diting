@@ -2,3 +2,5 @@ allow system_server sysfs_kgsl:file r_file_perms;
 
 # wfd
 allow system_server vendor_wfd_sys_debug_prop:file r_file_perms;
+
+allow system_server system_file:file { ioctl };
