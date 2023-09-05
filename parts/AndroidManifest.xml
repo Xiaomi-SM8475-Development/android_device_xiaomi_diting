@@ -68,7 +68,8 @@
         <activity
             android:name=".dolby.DolbyActivity"
             android:label="@string/dolby_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:theme="@style/Theme.SubSettingsBase"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
@@ -159,6 +160,7 @@
             android:name=".dolby.DolbyTileService"
             android:icon="@drawable/ic_dolby_qs"
             android:label="@string/dolby_title"
+            android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
