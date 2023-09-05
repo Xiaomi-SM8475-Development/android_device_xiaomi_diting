@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package org.lineageos.settings.thermal;
 
 import android.annotation.Nullable;
@@ -60,8 +61,8 @@ public class ThermalSettingsFragment extends PreferenceFragment
     private Map<String, ApplicationsState.AppEntry> mEntryMap =
             new HashMap<String, ApplicationsState.AppEntry>();
 
-    private RecyclerView mAppsRecyclerView;
     private ThermalUtils mThermalUtils;
+    private RecyclerView mAppsRecyclerView;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -100,6 +101,7 @@ public class ThermalSettingsFragment extends PreferenceFragment
     @Override
     public void onResume() {
         super.onResume();
+        getActivity().setTitle(getResources().getString(R.string.thermal_title));
         rebuild();
     }
 
@@ -203,8 +205,12 @@ public class ThermalSettingsFragment extends PreferenceFragment
                 return R.drawable.ic_thermal_dialer;
             case ThermalUtils.STATE_GAMING:
                 return R.drawable.ic_thermal_gaming;
+            case ThermalUtils.STATE_NAVIGATION:
+                return R.drawable.ic_thermal_navigation;
             case ThermalUtils.STATE_STREAMING:
                 return R.drawable.ic_thermal_streaming;
+            case ThermalUtils.STATE_VIDEO:
+                return R.drawable.ic_thermal_video;
             case ThermalUtils.STATE_DEFAULT:
             default:
                 return R.drawable.ic_thermal_default;
@@ -240,7 +246,9 @@ public class ThermalSettingsFragment extends PreferenceFragment
                 R.string.thermal_camera,
                 R.string.thermal_dialer,
                 R.string.thermal_gaming,
-                R.string.thermal_streaming
+                R.string.thermal_navigation,
+                R.string.thermal_streaming,
+                R.string.thermal_video
         };
 
         private ModeAdapter(Context context) {
@@ -316,10 +324,13 @@ public class ThermalSettingsFragment extends PreferenceFragment
 
             holder.mode.setAdapter(new ModeAdapter(context));
             holder.mode.setOnItemSelectedListener(this);
+
             holder.title.setText(entry.label);
             holder.title.setOnClickListener(v -> holder.mode.performClick());
+
             mApplicationsState.ensureIcon(entry);
             holder.icon.setImageDrawable(entry.icon);
+
             int packageState = mThermalUtils.getStateForPackage(entry.info.packageName);
             holder.mode.setSelection(packageState, false);
             holder.mode.setTag(entry);
