@@ -67,3 +67,9 @@ bluetooth.device.class_of_device=90,2,12
 
 # Sysbta
 persist.bluetooth.system_audio_hal.enabled=1
+
+# Havoc
+ro.havoc.device.name=Xiaomi 12T Pro/ Redmi K50 Ultra
+ro.havoc.group.url=https://t.me/+HwmMZWKT0jY4MzEx
+ro.havoc.maintainer=Kισżż Jesús
+ro.havoc.maintainer.username=Kισżż
