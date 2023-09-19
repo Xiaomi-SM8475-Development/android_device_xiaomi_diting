@@ -67,3 +67,6 @@ bluetooth.device.class_of_device=90,2,12
 
 # Sysbta
 persist.bluetooth.system_audio_hal.enabled=1
+
+# USB
+vendor.usb.product_string=Xiaomi 12T Pro
